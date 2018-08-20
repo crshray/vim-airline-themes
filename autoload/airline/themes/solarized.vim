@@ -202,6 +202,24 @@ function! airline#themes#solarized#refresh()
 
   let g:airline#themes#solarized#palette.tabline.airline_tabtype = [
         \ s:N2[0].g, s:N2[1].g, s:N2[0].t, s:N2[1].t, s:N2[2]]
+        
+  let g:airline#themes#solarized#palette.tabline.airline_tabsel = [
+        \ s:I2[0].g, s:green.g, s:I2[0].t, s:green.t, 'bold']
+
+  let g:airline#themes#solarized#palette.tabline.airline_tabsel_right = [
+        \ s:I2[0].g, s:green.g, s:I2[0].t, s:green.t, 'bold']
+
+  let g:airline#themes#solarized#palette.tabline.airline_tabmod = [
+        \ s:I2[0].g, s:yellow.g, s:I2[0].t, s:yellow.t, 'bold']
+
+  let g:airline#themes#solarized#palette.tabline.airline_tabmod_right = [
+        \ s:I2[0].g, s:yellow.g, s:I2[0].t, s:yellow.t, 'bold']
+
+  let g:airline#themes#solarized#palette.tabline.airline_tabmod_unsel = [
+        \ s:yellow.g, s:I2[1].g, s:yellow.t, s:I2[1].t, 'bold']
+
+  let g:airline#themes#solarized#palette.tabline.airline_tabmod_unsel_right = [
+        \ s:yellow.g, s:I2[1].g, s:yellow.t, s:I2[1].t, 'bold']
 endfunction
 
 call airline#themes#solarized#refresh()
